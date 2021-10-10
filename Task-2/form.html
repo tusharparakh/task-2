@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="/styling.css">
+</head>
+
+<body style="background-color: rgb(204, 197, 197);">
+    <form method="post" action="#" onSubmit="return validateForm();">
+        <div style="max-width: 400px;">
+        </div>
+        <div style="padding-bottom: 18px;font-size : 24px;">Survey Form</div>
+        <div style="display: flex; padding-bottom: 18px;max-width : 450px;">
+            <div style=" margin-left: 0; margin-right: 1%; width: 49%;">First name<br />
+                <input type="text" id="data_2" name="data_2" style="max-width: 100%;" class="form-control" />
+            </div>
+            <div style=" margin-left: 1%; margin-right: 0; width: 49%;">Last name<br />
+                <input type="text" id="data_3" name="data_3" style="max-width: 100%;" class="form-control" />
+            </div>
+        </div>
+        <div style="padding-bottom: 18px;">Email<span style="color: red;"> *</span><br />
+            <input type="text" id="data_4" name="data_4" style="max-width : 450px;" class="form-control" />
+        </div>
+        <div style="padding-bottom: 18px;">Address<br />
+            <input type="text" id="data_5" name="data_5" style="max-width : 450px;" class="form-control" />
+        </div>
+        <div style="padding-bottom: 18px;">Was it easy to obtain the necessary resources from the college library?<br />
+            <span><input type="radio" id="data_6_0" name="data_6" value="Yes" /> Yes</span><br />
+            <span><input type="radio" id="data_6_1" name="data_6" value="No" /> No</span><br />
+            <div style="padding-bottom: 18px;">Is it easy to obtain the necessary resources from the college
+                library?<br />
+                <span><input type="radio" id="data_6_0" name="data_6" value="Yes" /> Yes</span><br />
+                <span><input type="radio" id="data_6_1" name="data_6" value="No" /> No</span><br />
+            </div>
+            <div style="padding-bottom: 18px;">Are you satisfied with the teaching staff and their teaching
+                methods<br />
+                <select id="data_7" name="data_7" style="max-width : 250px;" class="form-control">
+                    <option>Please rate</option>
+                    <option>Extremely satisfied</option>
+                    <option>Very satisfied</option>
+                    <option>Satisfied</option>
+                    <option>Neutral</option>
+                    <option>Dissatisfied</option>
+                </select>
+            </div>
+            <div style="padding-bottom: 18px;">How satisfied are you with the facilities provided by the college?<br />
+                <select id="data_8" name="data_8" style="max-width : 250px;" class="form-control">
+                    <option>Please rate</option>
+                    <option>Extremely satisfied</option>
+                    <option>Very satisfied</option>
+                    <option>Satisfied</option>
+                    <option> Neutral</option>
+                    <option> Very dissatisfied</option>
+                </select>
+            </div>
+            <div style="padding-bottom: 18px;">How supportive were the faculty members?<br />
+                <select id="data_9" name="data_9" style="max-width : 250px;" class="form-control">
+                    <option>Please rate</option>
+                    <option>Extremely supportive</option>
+                    <option>Supportive</option>
+                    <option>Neutral</option>
+                    <option>Unsupportive</option>
+                    <option> Very unsupportive</option>
+                </select>
+            </div>
+            <div style="padding-bottom: 18px;">What do you think of the hostel?<br />
+                <select id="data_11" name="data_11" style="max-width : 250px;" class="form-control">
+                    <option>Please rate</option>
+                    <option>Extremely crowded</option>
+                    <option>Very crowded</option>
+                    <option>Somewhat crowded</option>
+                    <option>Not so crowded</option>
+                    <option>Not at all crowded</option>
+                </select>
+            </div>
+            <div style="padding-bottom: 18px;">Do you think faculty and support staff at the college were helpful?<br />
+                <select id="data_10" name="data_10" style="max-width : 250px;" class="form-control">
+                    <option>Please rate</option>
+                    <option>Very helpful</option>
+                    <option>Helpful</option>
+                    <option>
+                        Neither helpful nor unhelpful</option>
+                    <option>Unhelpful</option>
+                    <option>
+                        Very unhelpful</option>
+                </select>
+            </div>
+
+
+
+            <div style="padding-bottom: 18px;">How likely are you to continue attending this college next year?<br />
+                <select id="data_13" name="data_13" style="max-width : 250px;" class="form-control">
+                    <option>Please likely</option>
+                    <option>Please likely</option>
+                    <option>Extremely likely</option>
+                    <option>Very likely</option>
+                    <option>Somewhat likely</option>
+                    <option>Not so likely</option>
+                    <option>Not at all likely</option>
+                </select>
+            </div>
+            <div style="padding-bottom: 18px;">How satisfied are you with the accommodation?<br />
+                <select id="data_14" name="data_14" style="max-width : 250px;" class="form-control">
+                    <option>Please rate</option>
+                    <option>Extremely satisfied</option>
+                    <option>Very satisfied</option>
+                    <option>Satisfied</option>
+                    <option> Neutral</option>
+                    <option> Very dissatisfied</option>
+                </select>
+            </div>
+            <div style="padding-bottom: 18px;">How about your overall experience with this college?<br />
+                <select id="data_15" name="data_15" style="max-width : 250px;" class="form-control">
+                    <option>Please rate</option>
+                    <option>I don’t have a job</option>
+                    <option>No, I manage them both well</option>
+                    <option>Yes, but rarely</option>
+                    <option>Yes, often</option>
+                    <option>Yes, always</option>
+                </select>
+            </div>
+            <div style="padding-bottom: 18px;">Why are you a member of your congregation and not some other one?<br />
+                <textarea id="data_16" false name="data_16" style="max-width : 450px;" rows="6"
+                    class="form-control"></textarea>
+            </div>
+            <div style="padding-bottom: 18px;"><input name="skip_Submit" value="Submit" type="submit" /></div>
+            <div>
+                <div style="float:right"><a href="https://www.100forms.com" id="lnk100" title="form to email">form to
+                        email</a></div>
+
+            </div>
+    </form>
+</body>
+
+</html>
